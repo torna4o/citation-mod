@@ -1,3 +1,10 @@
+Below is the exact copy of the original branch's Readme from foucault (https://github.com/foucault/)
+What I modified is as follows: Normally the generated citation only comes as a prompt to the command panel.
+With my modification, it appends to a file of your choosing (preferably a.bib file) in addition to the command panel
+prompt. You can change the location of the corresponding file to append citation from "loca" variable in line 198.
+
+#####################
+
 citation
 ========
 
