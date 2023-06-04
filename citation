@@ -195,12 +195,16 @@ def get_entry(doi):
         raise Exception("Could not get data for \"%s\" from CrossRef (status code)" %
                 (url, raw.status_code))
 
+loca = "####" # This is the location of the .bib file you would like to append your new citations
 
 if __name__ == "__main__":
     try:
         doi = sys.argv[1]
         data = get_entry(doi)
         print(data)
+        with open(loca, 'a') as k:
+            k.write(str(data))
+            k.write(" \n") # allows putting the new citation one line below the last
     except IndexError as ie:
         print("Usage: %s DOI" % os.path.basename(sys.argv[0]), file=sys.stderr)
         print("No DOI provided", file=sys.stderr)
