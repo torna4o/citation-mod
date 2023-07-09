@@ -202,7 +202,7 @@ if __name__ == "__main__":
         doi = sys.argv[1]
         data = get_entry(doi)
         print(data)
-        with open(loca, 'a') as k:
+        with open(loca, 'a', encoding="utf-8") as k: # encoding parameter allows to write unicode entries to a file
             k.write(str(data))
             k.write(" \n") # allows putting the new citation one line below the last
     except IndexError as ie:
