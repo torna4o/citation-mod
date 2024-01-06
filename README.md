@@ -3,6 +3,17 @@ What I modified is as follows: Normally the generated citation only comes as a p
 With my modification, it appends to a file of your choosing (preferably a.bib file) in addition to the command panel
 prompt. You can change the location of the corresponding file to append citation from "loca" variable in line 198.
 
+Janury 6, 2024 UPDATE!!
+
+The usual structure to retrieve BibTeX entry to a specified .bib text file was as follows in Windows 10:
+
+> python citation-mod.py 10.XXXXX
+
+where 10.XXXXX is "doi of interest". Now it is possible to get more than one entries in one line as
+> python citation-mod.py 10.XXXXX,10.YYYYY
+
+where 10.YYYYY is another doi.
+
 #####################
 
 citation
