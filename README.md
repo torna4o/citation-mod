@@ -4,8 +4,8 @@ With my modification, it appends to a file of your choosing (preferably a.bib fi
 prompt. You can change the location of the corresponding file to append citation from "loca" variable in line 198.
 
 
-#Janury 6, 2024 UPDATE!!
-
+Janury 6, 2024 UPDATE!!
+=======================
 
 The usual structure to retrieve BibTeX entry to a specified .bib text file was as follows in Windows 10:
 
