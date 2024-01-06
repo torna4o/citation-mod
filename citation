@@ -200,11 +200,22 @@ loca = "####" # This is the location of the .bib file you would like to append y
 if __name__ == "__main__":
     try:
         doi = sys.argv[1]
-        data = get_entry(doi)
-        print(data)
-        with open(loca, 'a', encoding="utf-8") as k: # encoding parameter allows to write unicode entries to a file
-            k.write(str(data))
-            k.write(" \n") # allows putting the new citation one line below the last
+        if len(doi.split(",")) == 1:
+            print(doi)
+            data = get_entry(doi)
+            print(data)
+            with open(loca, 'a', encoding="utf-8") as k:
+                k.write(str(data))
+                k.write(" \n")
+        elif len(doi.split(",")) > 1:
+            aa = doi.split(",")
+            for i in aa:
+                print(i)
+                data = get_entry(i)
+                print(data)
+                with open(loca, 'a', encoding="utf-8") as k:
+                    k.write(str(data))
+                    k.write(" \n")
     except IndexError as ie:
         print("Usage: %s DOI" % os.path.basename(sys.argv[0]), file=sys.stderr)
         print("No DOI provided", file=sys.stderr)
