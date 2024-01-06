@@ -3,7 +3,9 @@ What I modified is as follows: Normally the generated citation only comes as a p
 With my modification, it appends to a file of your choosing (preferably a.bib file) in addition to the command panel
 prompt. You can change the location of the corresponding file to append citation from "loca" variable in line 198.
 
-Janury 6, 2024 UPDATE!!
+
+#Janury 6, 2024 UPDATE!!
+
 
 The usual structure to retrieve BibTeX entry to a specified .bib text file was as follows in Windows 10:
 
