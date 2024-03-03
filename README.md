@@ -18,7 +18,9 @@ it does not store the bibtex entry into a file, just list the result in CMD prom
 Moreover, to expedite working with arXiv entries, you may just put the article specific code, starting with the first two number corresponding to the last two digits of the year,
 
 > python saver2.py 10.48550/arXiv.2211.14683
+
 and
+
 > python saver2.py 2211.14683
 
 yield the same result. 
