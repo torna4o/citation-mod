@@ -4,6 +4,26 @@ With my modification, it appends to a file of your choosing (preferably a.bib fi
 prompt. You can change the location of the corresponding file to append citation from "loca" variable in line 198.
 
 
+March 3, 2024 UPDATE!!
+=======================
+
+Now when the user put an "l," right before the first DOI, as:
+
+> python saver2.py l,10.XXXX
+
+it does not store the bibtex entry into a file, just list the result in CMD prompt. It is possible to list multiple DOI at once like:
+
+> python saver2.py l,10.XXXX,10.YYYY
+
+Moreover, to expedite working with arXiv entries, you may just put the article specific code, starting with the first two number corresponding to the last two digits of the year,
+
+> python saver2.py 10.48550/arXiv.2211.14683
+and
+> python saver2.py 2211.14683
+
+yield the same result. 
+
+
 Janury 6, 2024 UPDATE!!
 =======================
 
